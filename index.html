@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mindfullness and Mental Well Being Website">
+    <meta name="keywords" content="Mindfullness, mental health, stress, positivity">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Be Kind To Your Mind</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1 id="logo"> Be Kind To Your Mind </h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="#">Mindfullness</a>
+                </li>
+                <li>
+                    <a href="#">Techniques</a>
+                </li>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+
+
+        <h3 class="quoteheader">Daily Quote for </h3>
+        <h3 id="date" class="quoteheader"></h3>
+
+        <div id="quoteBlock">
+        </div>
+    </section>
+    <section>
+        <div class="outer-para-div">
+            <div class="left-para-div">
+                <h3>What is Mindfulness? <i class="fa-solid fa-brain"></i></h3>
+
+                <p class="index-para-text"> Mindfulness is the practice of ‘being fully present in the moment’.
+                    It’s a different sort of awareness to the ‘automatic pilot’ that we are so often immersed
+                    in – like when we’re driving or walking
+                    and don’t notice the details of the journey because we’re lost in thought.
+                    It can often be very difficult to be ‘in the moment’ as we can very easily become distracted by what
+                    is
+                    going on around us or by our own thoughts. People can ‘train’ to be more mindful in many ways such
+                    as
+                    through doing mindfulness courses, listening to cds, reading books or participating in mindfulness
+                    retreats, although probably the most helpful way to learn is with an experienced mindfulness teacher
+                </p>
+
+            </div>
+            <div class="right-para-div">
+                <h3>Is Mindfulness new? <i class="fa-solid fa-person-praying"></i></h3>
+
+                <p class="index-para-text">Mindfulness has been part of Judeo Christian and Buddhist teachings for
+                    centuries.
+                    In 1979 Jon Kabat Zinn developed an eight-week programme called Mindfulness Based Stress Reduction
+                    (MBSR) to teach mindfulness to people who had chronic illness and pain. Kabat Zinn is an American
+                    molecular biologist who is now Professor of Medicine Emeritus and he demonstrated through research
+                    that mindfulness was very beneficial. The MBSR programme was later adapted by three psychologists,
+                    Prof. Zindel Segal,
+                    Prof. Mark Williams and Prof. John Teasdale as Mindfulness Based Cognitive Therapy (MBCT)
+                    to prevent relapse of depression.</p>
+            </div>
+            <div class="learn-more-btn-div">
+                <button id="learn-more-btn">Learn More!</button>
+            </div>
+        </div>
+    </section>
+    <section class="techniques-section">
+        <h2 id="header-techniques"> Techniques To Improve Your Mental Health</h2>
+        <div class="techniques-container">
+            <div class="techniques-box"></div>
+            <div class="techniques-box"></div>
+            <div class="techniques-box"></div>
+            <div class="techniques-box"></div>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+<script>
+    var date = new Date();
+    var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+    document.getElementById("date").innerHTML = current_date;
+</script>
+<script src="https://kit.fontawesome.com/394cced9ae.js" crossorigin="anonymous"></script>
