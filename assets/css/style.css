@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+    background-color: #6B87B6;
+}
+
+a {
+    text-decoration: none;
+}
+
+#quoteBlock {
+    background: url('../images/824609.jpg') no-repeat center center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 250px;
+}
+
+
+
+
+.quoteheader {
+    display: inline-block;
+}
+
+.left-para-div {
+    width: 50%;
+    /* border: 1px solid black; */
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.right-para-div {
+    width: 50%;
+    /* border: 2px solid black; */
+    display: inline-block;
+    float: right;
+    box-sizing: border-box;
+    padding: 20px;
+    /* line-height: 50px; */
+}
+
+.outer-para-div {
+    height: 300px;
+}
+
+
+.index-para-text {
+    padding: 10px;
+    line-height: 30px;
+
+}
+
+#learn-more-btn {
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+    color: blue
+}
+
+#learn-more-btn:hover {
+    color: #3a3a3a;
+}
+
+.learn-more-btn-div {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.techniques-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+#header-techniques {
+    margin-left: 20px;
+
+}
+
+.techniques-box {
+    display: inline-block;
+    border: 2px solid black;
+    width: 20%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.techniques-section {
+    margin-top: 50px;
+}
