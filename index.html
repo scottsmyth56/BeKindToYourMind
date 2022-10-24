@@ -13,37 +13,41 @@
 
 <body>
     <header>
-        <a href="index.html">
-            <h1 id="logo"> Be Kind To Your Mind </h1>
-        </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="#">Mindfullness</a>
-                </li>
-                <li>
-                    <a href="#">Techniques</a>
-                </li>
-                <li>
-                    <a href="index.html" class="active">Home</a>
-                </li>
-            </ul>
-        </nav>
+
+        <div id="logo-div">
+            <div id="circle">
+                <a href="index.html"><img src="assets/images/logo.png" id="logo"></a>
+            </div>
+
+            <div id="logo-text-div">
+                <h1 id="logo-text"> Be Kind To Your Mind</h1>
+            </div>
+       
+       
+        <div class="nav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">Techniques</a>
+            <a href="#contact">Mindfulness</a>
+            <a href="#about">Videos</a>
+
+
+        </div> </div>
     </header>
 
-    <section>
-
-
-        <h3 class="quoteheader">Daily Quote for </h3>
-        <h3 id="date" class="quoteheader"></h3>
-
+    <section class="quote-section">
         <div id="quoteBlock">
+            <div class="quote-content-div">
+            <h3 class="quoteheader">Daily Quote for </h3>
+            <h3 id="date" class="quoteheader"></h3>
+
+            <h1 id="quote-text"> “There is hope, even when your brain tells you there isn’t.” ― John Green</h1>
+        </div>
         </div>
     </section>
-    <section>
+    <section id="paragraph-section">
         <div class="outer-para-div">
             <div class="left-para-div">
-                <h3>What is Mindfulness? <i class="fa-solid fa-brain"></i></h3>
+                <h2>What is Mindfulness? <i class="fa-solid fa-brain"></i></h2>
 
                 <p class="index-para-text"> Mindfulness is the practice of ‘being fully present in the moment’.
                     It’s a different sort of awareness to the ‘automatic pilot’ that we are so often immersed
@@ -59,7 +63,7 @@
 
             </div>
             <div class="right-para-div">
-                <h3>Is Mindfulness new? <i class="fa-solid fa-person-praying"></i></h3>
+                <h2>Is Mindfulness new? <i class="fa-solid fa-person-praying"></i></h2>
 
                 <p class="index-para-text">Mindfulness has been part of Judeo Christian and Buddhist teachings for
                     centuries.
@@ -79,10 +83,64 @@
     <section class="techniques-section">
         <h2 id="header-techniques"> Techniques To Improve Your Mental Health</h2>
         <div class="techniques-container">
-            <div class="techniques-box"></div>
-            <div class="techniques-box"></div>
-            <div class="techniques-box"></div>
-            <div class="techniques-box"></div>
+
+            <div class="techniques-box" id="exercise-card">
+
+                <div class="info">
+                    <div class="card-text">
+                        <h1>Exercise</h1>
+                        <p> Being active is not only great for your physical health and fitness.Evidence also shows it
+                            can also improve your mental wellbeing</p>
+                        <button class="technique-btn">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="techniques-box" id="connect-card">
+
+                <div class="info">
+                    <div class="card-text">
+                        <h1>Connect with People</h1>
+                        <p> Phone calls and social networks have their place, but few things can beat the
+                            stress-busting,
+                            mood-boosting power of quality face-to-face time with other people,
+                            especially those you love and people who energize you
+                        </p>
+                        <button class="technique-btn">Read More</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="techniques-box" id="diet-card">
+                <div class="info">
+                    <div class="card-text">
+                        <h1>Healthy Diet</h1>
+                        <p> Foods that can support your mood include fatty fish rich in omega-3s,
+                            nuts (walnuts, almonds, cashews and peanuts), avocados, beans, leafy greens (spinach, kale
+                            and Brussels sprouts),
+                            and fresh fruit such as blueberries.</p>
+                        <button class="technique-btn">Read More</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="techniques-box" id="sleep-card">
+                <div class="info">
+                    <div class="card-text">
+                        <h1>Don't Skimp on Sleep</h1>
+                        <p>It matters more than you think. Sleep is our body and mind's best way to recharge and
+                            rejuvenate.
+                            One way to get sleep better is to take a break from the stimulation of screens — TV, phones,
+                            tablets or computers —
+                            in the hours before bedtime. Consider reading or listening to relaxing music instead.</p>
+                        <button class="technique-btn">Read More</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 

@@ -14,7 +14,107 @@ body {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     color: #3a3a3a;
-    background-color: #6B87B6;
+
+}
+
+
+#logo {
+
+    color: cadetblue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+
+}
+
+#logo-text {
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#logo-text-div {
+    display: inline-block;
+    padding: 10px;
+
+
+}
+
+.nav {
+    display: inline-block;
+    float: right;
+    color: white;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-right: 8px;
+    
+  font-size: 20px;
+      color: white;
+    /* transition: color .3s ease-in-out, box-shadow .3s ease-in-out; */
+}
+
+.nav a::after {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+}
+
+.nav a::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* .nav a:hover{
+
+    box-shadow: inset 100px 0 0 0 #54b3d6 ;
+
+} */
+
+
+
+
+
+#logo-div {
+    /* display: flex;
+    justify-content: center; */
+    width: 100%;
+    display: inline-block;
+    background-color: #8fcdff;
+}
+
+#circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+
 }
 
 a {
@@ -26,13 +126,32 @@ a {
     background-size: 100% 100%;
     width: 100%;
     height: 250px;
+    clear: both;
+    text-align: center;
 }
 
+.quote-section {
+    width: 100%;
+    display: inline-block;
+}
 
-
+.quote-content-div {
+    background: rgba(17, 17, 17, 0.316);
+    width: 100%;
+    height: 100%
+}
 
 .quoteheader {
+    margin-top: 5px;
     display: inline-block;
+    color: white;
+    clear: both;
+}
+
+#quote-text {
+    color: white;
+    font-size: 40px;
+    line-height: 250px;
 }
 
 .left-para-div {
@@ -45,12 +164,19 @@ a {
 
 .right-para-div {
     width: 50%;
-    /* border: 2px solid black; */
     display: inline-block;
     float: right;
     box-sizing: border-box;
     padding: 20px;
     /* line-height: 50px; */
+}
+
+#paragraph-section {
+    margin-top: 40px;
+}
+
+#paragraph-section p {
+font-size: 17px;
 }
 
 .outer-para-div {
@@ -65,11 +191,16 @@ a {
 }
 
 #learn-more-btn {
-    text-align: center;
-    padding: 5px;
-    width: 100px;
-    height: 50px;
-    color: blue
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: #8fcdff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+    margin-top: 5px;
 }
 
 #learn-more-btn:hover {
@@ -96,12 +227,96 @@ a {
 
 .techniques-box {
     display: inline-block;
-    border: 2px solid black;
+    border: 2px solid #8fcdff;
     width: 20%;
     height: 300px;
     margin: 0 auto;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(black, 0.5);
+}
+
+.technique-btn {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+    margin-top: 5px;
+}
+
+.technique-btn:hover {
+    background: #8fcdff;
+    color: white;
 }
 
 .techniques-section {
     margin-top: 50px;
+
+}
+
+.techniques-box:hover {
+    transform: translateY(20px);
+}
+
+.techniques-img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.info {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card-text {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+    color: white;
+    padding: 8px
+}
+
+.card-text h1 {
+    color: #8fcdff;
+}
+
+.info:hover {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+#exercise-card {
+    background: url('../images/Exercise.jpg');
+    background-size: 100% 100%;
+
+}
+
+#connect-card {
+    background: url('../images/connect.jpg');
+    background-size: 100% 100%;
+}
+
+#diet-card {
+    background: url('../images/diet.jpg');
+    background-size: 100% 100%;
+}
+
+#sleep-card {
+    background: url('../images/sleep.jpg');
+    background-size: 100% 100%;
 }
