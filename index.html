@@ -39,7 +39,7 @@
         <div id="quoteBlock">
             <div class="quote-content-div">
                 <h3 class="quoteheader">Daily Quote for </h3>
-                <h3 id="date" class="quoteheader"></h3>
+                <h3 id="date" class="quoteheader"> </h3>
 
                 <h1 id="quote-text"> “There is hope, even when your brain tells you there isn’t.” ― John Green</h1>
             </div>
@@ -82,7 +82,7 @@
         </div>
     </section>
     <section class="techniques-section">
-        <h2 id="header-techniques"> Techniques To Improve Your Mental Health</h2>
+        <h2 class="header-techniques"> Techniques To Improve Your Mental Health</h2>
         <div class="techniques-container">
 
             <div class="techniques-box" id="exercise-card">
@@ -146,7 +146,7 @@
     </section>
 
     <section id="stressRelief_Books">
-        <h2 id="header-techniques"> 5 Second Stress Relievers</h2>
+        <h2 class="header-techniques"> 5 Second Stress Relievers</h2>
 
         <div class="container-stress">
 
@@ -210,47 +210,66 @@
 
     </section>
 
-    <section id="carousel-section"></section>
+    <section id="carousel-section">
 
-    <div id="podcast-carousel">
-        <div class="slideshow-container">
-            <div class="mySlides1">
-                <img src="assets/images/Exercise.jpg" style="width:100%">
+        <div class="podcast-carousel">
+            <h2 class="carousel-header">Top Mental Health Podcasts</h2>
+            <div class="slideshow-container">
+                <div class="mySlides1">
+                    <a href="https://www.tenpercent.com/podcast" target="_blank"><img
+                            src="assets/images/10percent-pod.jpg" style="width:100%"></a>
+                </div>
+
+                <div class="mySlides1">
+                    <a href="http://www.sleepwithmepodcast.com/" target="_blank"><img
+                            src="assets/images/sleepwithme-pod.png" style="width:100%"></a>
+                </div>
+
+
+                <div class="mySlides1">
+                    <a href="https://psychcentral.com/blog/show" target="_blank"><img
+                            src="assets/images/insidemental-pod.jpg" style="width:100%"></a>
+                </div>
+                <div class="mySlides1">
+                    <a href="https://hiddenbrain.org/" target="_blank"><img src="assets/images/hiddenbrain.jpg"
+                            style="width:100%"></a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
             </div>
-
-            <div class="mySlides1">
-                <img src="assets/images/connect.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides1">
-                <img src="assets/images/Exercise.jpg" style="width:100%">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-        </div>
-    </div>
-
-    <div id="book-carousel">
-        <div class="slideshow-container">
-            <div class="mySlides2">
-                <img src="assets/images/Exercise.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides2">
-                <img src="assets/images/Exercise.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides2">
-                <img src="assets/images/Exercise.jpg" style="width:100%">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
         </div>
 
+        <div class="app-carousel">
+            <h2 class="carousel-header">Top Mental Health Apps</h2>
+            <div class="slideshow-container">
+                <div class="mySlides2">
+                    <a href="https://www.headspace.com/" target="_blank"><img src="assets/images/headspace.png"
+                            style="width:100%"></a>
+                </div>
+
+                <div class="mySlides2">
+
+                    <a href="https://hminnovations.org/meditation-app" target="_blank"><img
+                            src="assets/images/healthyminds.png" style="width:100%"></a>
+                </div>
+
+                <div class="mySlides2">
+                    <a href="https://www.smilingmind.com.au/" target="_blank"><img src="assets/images/smilingmind.png"
+                            style="width:100%"></a>
+                </div>
+
+                <div class="mySlides2">
+                    <a href="https://www.calm.com/" target="_blank"><img src="assets/images/calm-app.png"
+                            style="width:100%"></a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
 
 
+    </section>
 
 
 
@@ -259,6 +278,8 @@
 
 </body>
 <footer>
+
+
 
 
 </footer>
