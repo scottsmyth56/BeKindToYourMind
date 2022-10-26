@@ -67,7 +67,7 @@ body {
 
     font-size: 20px;
     color: white;
-    /* transition: color .3s ease-in-out, box-shadow .3s ease-in-out; */
+
 }
 
 .nav a::after {
@@ -90,19 +90,14 @@ body {
     transform-origin: bottom left;
 }
 
-/* .nav a:hover{
 
-    box-shadow: inset 100px 0 0 0 #54b3d6 ;
-
-} */
 
 
 
 
 
 #logo-div {
-    /* display: flex;
-    justify-content: center; */
+
     width: 100%;
     display: inline-block;
     background-color: #8fcdff;
@@ -156,7 +151,7 @@ a {
 
 .left-para-div {
     width: 50%;
-    /* border: 1px solid black; */
+
     display: inline-block;
     box-sizing: border-box;
     padding: 20px;
@@ -168,7 +163,7 @@ a {
     float: right;
     box-sizing: border-box;
     padding: 20px;
-    /* line-height: 50px; */
+
 }
 
 #paragraph-section {
@@ -233,7 +228,8 @@ a {
     height: 300px;
     margin: 0 auto;
     transition: 0.4s ease-out;
-    box-shadow: 0px 7px 10px rgba(black, 0.5);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
 }
 
 .technique-btn {
@@ -328,18 +324,19 @@ a {
 
 .stressRelief_div {
     display: grid;
-    grid-template-columns: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px 150px 150px;
     grid-template-rows: 150px 150px;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        ". . ."
-        ". . .";
+        ". . . . ."
+        ". . . . .";
 }
 
+
 .relief {
-   
+
     transition: transform .4s;
     background-color: #8fcdff;
     border: 1px solid white;
@@ -352,7 +349,7 @@ a {
 
 .container-stress {
     margin-top: 30px;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -369,4 +366,118 @@ a {
     color: white;
     text-align: center;
 
+}
+
+
+@media screen and (max-width: 1200px) {}
+
+
+@media screen and (max-width: 950px) {
+    .techniques-section {
+        margin-top: 200px;
+    }
+
+    .techniques-box {
+        width: 49%;
+        display: inline-flex;
+    }
+
+    .techniques-container {
+        display: block;
+    }
+
+    #quote-text {
+        line-height: normal;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .left-para-div {
+        width: 100%;
+
+    }
+
+    .right-para-div {
+        width: 100%;
+    }
+
+    #quote-text {
+        line-height: normal;
+    }
+
+    .learn-more-btn-div {
+        width: 100%;
+    }
+
+    .techniques-box {
+        width: 100%;
+    }
+
+    .techniques-container {
+        display: block;
+    }
+
+    .techniques-section {
+        margin-top: 570px;
+    }
+
+    .container-stress {
+        width: 100%;
+    }
+
+}
+
+#carousel-section {
+    margin-top: 80px;
+
+}
+
+#podcast-carousel {
+    width: 49%;
+    display: inline-block;
+
+}
+
+#book-carousel {
+    width: 49%;
+    display: inline-block;
+
+}
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    border: 2px solid #8fcdff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #8fcdff;
+    color: black;
 }
