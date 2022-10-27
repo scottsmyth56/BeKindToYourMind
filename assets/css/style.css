@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+
 /* font-family: 'Oswald', sans-serif; */
 /* font-family: 'Montserrat', sans-serif; */
 
@@ -18,7 +19,7 @@ body {
 }
 
 
-#logo {
+.logo {
 
     color: cadetblue;
     height: 100px;
@@ -32,7 +33,7 @@ body {
 
 }
 
-#logo-text {
+.logo-text {
     display: inline-block;
     left: 50%;
     top: 50%;
@@ -44,7 +45,7 @@ body {
     text-transform: uppercase;
 }
 
-#logo-text-div {
+.logo-text-div {
     display: inline-block;
     padding: 10px;
     letter-spacing: 5px;
@@ -53,7 +54,7 @@ body {
 }
 
 .nav {
-    display: inline-block;
+    /* display: inline-block; */
     float: right;
     color: white;
     margin-top: 50px;
@@ -91,19 +92,21 @@ body {
     transform-origin: bottom left;
 }
 
-#logo-div {
+.logo-div {
+
 
     width: 100%;
     display: inline-block;
     background-color: #8fcdff;
 }
 
-#circle {
+.circle {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     background-color: white;
     display: inline-block;
+    margin: 5px;
 
 }
 
@@ -154,7 +157,7 @@ a {
 
 .right-para-div {
     width: 50%;
-    display: inline-block;
+  /* //  display: inline-block; */
     float: right;
     box-sizing: border-box;
     padding: 20px;
@@ -175,7 +178,7 @@ a {
 .index-para-text {
     padding: 10px;
     line-height: 35px;
-    font-size: 22px;
+    font-size: 18px;
 
 }
 
@@ -190,7 +193,7 @@ a {
     cursor: pointer;
     transition: 0.4s ease;
     margin-top: 5px;
-    width: 300px;
+    width: 220px;
     font-size: 20px;
 }
 
@@ -366,17 +369,36 @@ a {
 }
 
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+
+    #quote-text {
+        color: white;
+        font-size: 34px;
+        line-height: 15px;
+        margin-top: 50px;
+    }
+    .techniques-section{
+        margin-top: 250px;
+    }
+    .techniques-box {
+        width: 50%;
+        display: inline-flex;
+        margin-bottom: 12px;
+    }
+
+
+}
 
 
 @media screen and (max-width: 950px) {
     .techniques-section {
-        margin-top: 200px;
+        margin-top: 300px;
     }
 
     .techniques-box {
         width: 49%;
         display: inline-flex;
+        margin-bottom: 12px;
     }
 
     .techniques-container {
@@ -406,10 +428,15 @@ a {
     
     .relief p {
         display: block;
-        color: white;
         text-align: center;
         font-size:  12px;
         margin-top: 8px;
+    }
+    .nav {
+        justify-content: center;
+        display:flex;
+        width: 100%;
+
     }
     
 
@@ -526,8 +553,10 @@ a {
 }
 
 footer {
-    height: 200px;
+    height: 150px;
     background-color: #8fcdff;
     width: 100%;
+    display: flex;
+    justify-content: center;
 
 }
