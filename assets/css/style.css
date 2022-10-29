@@ -803,6 +803,7 @@ footer {
  justify-content: center;
 }
 .improve-techniques-div {
+    margin-bottom: 80px;
     width: 80%;
     margin-top: 30px;
     display: grid;
@@ -818,7 +819,7 @@ footer {
     background: #211f1f9c;
     height: 100%;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
 
 }
 
@@ -838,6 +839,7 @@ footer {
 }
 .Exercise:hover{
     transform: scale(1.1);
+    
 }
 
 
@@ -851,7 +853,16 @@ footer {
     line-height: 25px;
     background-color: #3a3a3a;
     color: white;
+    background: url('../images/diet-big.jpg');
+    background-size: 100% 100%;
+    transition: all 1s;
+    font-size: 17px;
+
 }
+.Diet:hover{
+    transform: scale(1.1);
+}
+
 
 .Connect {
     grid-area: Connect;
@@ -861,7 +872,15 @@ footer {
     line-height: 20px;
     background-color: #3a3a3a;
     color: white;
+    background: url('../images/connect-big.jpg');
+    background-size: 100% 100%;
+    transition: all 1s;
+    font-size: 17px;
 }
+.Connect:hover{
+    transform: scale(1.1);
+}
+
 
 .Sleep {
     grid-area: Sleep;
@@ -870,7 +889,15 @@ footer {
     padding: 20px;
     background-color: #3a3a3a;
     color: white;
+    background: url('../images/sleep-big.jpg');
+    background-size: 100% 100%;
+    transition: all 1s;
+    font-size: 17px;
 }
+.Sleep:hover{
+    transform: scale(1.1);
+}
+
 
 .technique-header {
     text-transform: uppercase;
