@@ -665,6 +665,8 @@ footer {
     font-size: 20px;
     transition: 0.4s;
     text-transform: uppercase;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 
 }
 
@@ -675,7 +677,7 @@ footer {
 
 .accordion:after {
     content: '\002B';
-    color: #777;
+    color: white;
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -686,7 +688,7 @@ footer {
 }
 
 .panel {
-    
+
     width: 100%;
     padding: 0 18px;
     background-color: white;
@@ -704,15 +706,49 @@ footer {
 
 .info-accordion {
     text-align: center;
-
+    margin-top: 20px;
 }
 
-.mindfulness-header{
+.mindfulness-header {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
+
+.more-info-videos {
+    /* margin-top: 30px;
+    margin-left: 20px; */
+    width: 100%;
+
+}
+.outer-left-video{
+    width: 50%;
+}
+
+.left-video {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* padding-top: 56.25%; */
+    /* 16:9 Aspect Ratio */
+}
+
+.left-iframe {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.right-video {
+    width: 49%;
+
+}
+
 
 /* .socials-footer{
     float: right;
