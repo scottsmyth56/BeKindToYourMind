@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 
-/* font-family: 'Oswald', sans-serif; */
-/* font-family: 'Montserrat', sans-serif; */
+
 
 * {
     margin: 0;
@@ -33,8 +32,6 @@ body {
 
 }
 
-.logo-title-div {}
-
 .logo-text {
     display: inline-block;
     left: 50%;
@@ -54,9 +51,12 @@ body {
 
 
 }
+.active{
+    border-bottom: 1px solid white;
+}
 
 .nav {
-    /* display: inline-block; */
+
     float: right;
     color: white;
     margin-top: 50px;
@@ -73,26 +73,21 @@ body {
     color: white;
 
 }
-
 .nav a::after {
-
     content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
+    display: block;
+    width: 0;
     height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-
+    background: white;
+    transition: width .3s;
 }
 
-.nav a::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.nav a:hover::after {
+    width: 100%;
+    /* //transition: width .3s; */
 }
+
+
 
 .logo-div {
 
@@ -655,3 +650,17 @@ footer {
 .outer-circle {
     display: inline-flex;
 }
+/* .socials-footer{
+    float: right;
+    font-size: 20px;
+    color: white;
+}
+.social-div{
+    width: 99%;
+    text-align: center;
+}
+.outer-social{
+    width: 49%;
+    display:inline-flex ;
+    justify-content: center;
+} */
