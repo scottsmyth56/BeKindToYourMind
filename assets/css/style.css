@@ -159,18 +159,16 @@ a {
 
 .right-para-div {
     width: 50%;
-    /* //  display: inline-block; */
     float: right;
     box-sizing: border-box;
     padding: 20px;
 
 }
 
-#paragraph-section {
+.paragraph-section {
     margin-top: 40px;
+    height: 350px;
 }
-
-
 
 .outer-para-div {
     height: 300px;
@@ -205,7 +203,7 @@ a {
 
 .learn-more-btn-div {
     display: flex;
-    margin: 0 auto;
+
     justify-content: center;
 }
 
@@ -216,10 +214,11 @@ a {
 
 }
 
-.header-techniques {
+.section-header {
     margin-left: 20px;
 
 }
+
 
 .techniques-box {
     display: inline-block;
@@ -319,7 +318,7 @@ a {
     background-size: 100% 100%;
 }
 
-#stressRelief_Books {
+#stressRelief{
     margin-top: 70px;
 }
 
@@ -381,7 +380,7 @@ a {
     }
 
     .techniques-section {
-        margin-top: 280px;
+        margin-top: 200px;
     }
 
     .techniques-box {
@@ -395,8 +394,8 @@ a {
 
 
 @media screen and (max-width: 950px) {
-    .techniques-section {
-        margin-top: 300px;
+    .paragraph-section {
+        height: 450px;
     }
 
     .techniques-box {
@@ -408,6 +407,9 @@ a {
     .techniques-container {
         display: block;
     }
+    .techniques-section{
+        margin-top: 300px;
+    }
 
     #quote-text {
         line-height: normal;
@@ -416,13 +418,13 @@ a {
     .stressRelief_div {
         display: grid;
         grid-template-columns: 120px 120px 120px 120px 120px;
-        grid-template-rows: 120px 120px ;
+        grid-template-rows: 120px 120px;
         grid-auto-columns: 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            ". . . . .  "
-            ". . . . .  ";
+            ". . . . . "
+            ". . . . . ";
     }
 
     .relief-img {
@@ -451,16 +453,15 @@ a {
         font-size: 20px
     }
 
-    .logo {}
-
     .logo-text-div {
         width: 100%;
     }
+
     .outer-circle {
         display: flex;
         width: 100%;
         justify-content: center;
-       
+
 
     }
 
@@ -468,9 +469,10 @@ a {
 
 }
 
-
-
 @media screen and (max-width: 800px) {
+    .paragraph-section {
+        height: 550px;
+    }
     .outer-circle {
         display: flex;
         width: 100%;
@@ -478,13 +480,9 @@ a {
 
     }
 
-    .circle {}
-
     .logo-text-div {
         width: 100%;
     }
-
-
 
     .left-para-div {
 
@@ -513,9 +511,9 @@ a {
         text-align: center;
     }
 
-    .techniques-section {
+    /* .techniques-section {
         margin-top: 570px;
-    }
+    } */
 
     .container-stress {
         width: 100%;
@@ -534,23 +532,12 @@ a {
     }
 
 }
-@media screen and (max-width: 650px) {
-    .stressRelief_div {
-       display: grid;
-       grid-template-columns: 120px 120px;
-       grid-template-rows: 120px 120px 120px 120px;
-       grid-auto-columns: 1fr;
-       gap: 0px 0px;
-       grid-auto-flow: row;
-       grid-template-areas:
-           ". .  "
-           ". .  "
-           ". .  ";
-   }
-}
 
-@media screen and (max-width: 550px) {
-     .stressRelief_div {
+@media screen and (max-width: 620px) {
+    .paragraph-section{
+        height: 670px;
+    }
+    .stressRelief_div {
         display: grid;
         grid-template-columns: 120px 120px;
         grid-template-rows: 120px 120px 120px 120px;
@@ -562,9 +549,13 @@ a {
             ". .  "
             ". .  ";
     }
-    .techniques-section{
-        margin-top: 700px;
+}
+
+@media screen and (max-width: 550px) {
+    .paragraph-section {
+        height: 880px;
     }
+
     .techniques-box {
         width: 100%;
     }
@@ -574,6 +565,29 @@ a {
         text-align: center;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .paragraph-section {
+        height: 1000px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .paragraph-section {
+        height: 1200px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .paragraph-section {
+        height: 1300px;
+    }
+}
+@media screen and (max-width: 324px) {
+    .paragraph-section {
+        height: 1450px;
+    }
+}
+
+
 
 #carousel-section {
     margin-top: 80px;
@@ -595,7 +609,6 @@ a {
 .slideshow-container {
 
     margin-top: 15px;
-    ;
     max-width: 700px;
     position: relative;
     margin: auto;
@@ -638,13 +651,14 @@ a {
 }
 
 footer {
-    
+
     background-color: #8fcdff;
     width: 100%;
     display: flex;
     justify-content: center;
 
 }
-.outer-circle{
-    display:inline-flex;
+
+.outer-circle {
+    display: inline-flex;
 }
