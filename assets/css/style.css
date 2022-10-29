@@ -804,27 +804,30 @@ footer {
     border-right: 2px solid #3a3a3a;
     border-bottom: 2px solid #3a3a3a;
     padding:20px;
+    line-height: 25px;
 }
 
 .Diet {
     grid-area: Diet;
     border-left: 2px solid #3a3a3a;
     border-bottom: 2px solid #3a3a3a;
-
+    padding:20px;
+    line-height: 25px;
 }
 
 .Connect {
     grid-area: Connect;
     border-right: 2px solid #3a3a3a;
     border-top: 2px solid #3a3a3a;
-
+    padding:20px;
+    line-height: 20px;
 }
 
 .Sleep {
     grid-area: Sleep;
     border-left: 2px solid #3a3a3a;
     border-top: 2px solid #3a3a3a;
-
+    padding:20px;
 }
 .technique-header{
     text-transform: uppercase;
