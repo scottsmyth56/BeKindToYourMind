@@ -798,8 +798,12 @@ footer {
     margin-left: 20px;
 }
 
-
+.outer-techniques-div{
+ display: flex;
+ justify-content: center;
+}
 .improve-techniques-div {
+    width: 80%;
     margin-top: 30px;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -828,7 +832,12 @@ footer {
     color: white;
     background: url('../images/exercise-big.jpg');
     background-size: 100% 100%;
+    transition: all 1s;
+    font-size: 17px;
 
+}
+.Exercise:hover{
+    transform: scale(1.1);
 }
 
 
