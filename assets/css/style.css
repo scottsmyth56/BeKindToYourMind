@@ -722,21 +722,29 @@ footer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
     gap: 10px;
 }
 
 
-.outer-left-video {
+.outer-video {
     flex: 400px;
-    width: 49%;
+    display: flex;
+    justify-content: center;
 
 }
 
 .left-video {
-
-    width: 100%;
+    width: 80%;
     overflow: hidden;
+}
+
+.right-video {
+    width: 80%;
+}
+
+#video-header {
+    margin-top: 50px;
+    margin-left: 20px;
 }
 
 
