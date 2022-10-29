@@ -673,6 +673,7 @@ footer {
 .focused,
 .accordion:hover {
     background-color: #ccc;
+    color: #3a3a3a;
 }
 
 .accordion:after {
@@ -688,7 +689,7 @@ footer {
 }
 
 .panel {
-
+    line-height: 30px;
     width: 100%;
     padding: 0 18px;
     background-color: white;
@@ -717,37 +718,27 @@ footer {
 }
 
 .more-info-videos {
-    /* margin-top: 30px;
-    margin-left: 20px; */
+    margin-top: 30px;
     width: 100%;
-
-}
-.outer-left-video{
-    width: 50%;
-}
-
-.left-video {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    /* padding-top: 56.25%; */
-    /* 16:9 Aspect Ratio */
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    gap: 10px;
 }
 
-.left-iframe {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
 
-.right-video {
+.outer-left-video {
+    flex: 400px;
     width: 49%;
 
 }
+
+.left-video {
+
+    width: 100%;
+    overflow: hidden;
+}
+
 
 
 /* .socials-footer{
