@@ -51,7 +51,8 @@ body {
 
 
 }
-.active{
+
+.active {
     border-bottom: 1px solid white;
 }
 
@@ -73,6 +74,7 @@ body {
     color: white;
 
 }
+
 .nav a::after {
     content: '';
     display: block;
@@ -639,7 +641,7 @@ a {
 }
 
 footer {
-   position: absolute;
+    position: absolute;
     background-color: #8fcdff;
     width: 100%;
     display: flex;
@@ -650,45 +652,68 @@ footer {
 .outer-circle {
     display: inline-flex;
 }
+
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #8fcdff;
+    color: white;
     cursor: pointer;
     padding: 18px;
     width: 80%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
     transition: 0.4s;
-  }
-  
-  .focused, .accordion:hover {
+    text-transform: uppercase;
+
+}
+
+.focused,
+.accordion:hover {
     background-color: #ccc;
-  }
-  
-  .accordion:after {
+}
+
+.accordion:after {
     content: '\002B';
     color: #777;
     font-weight: bold;
     float: right;
     margin-left: 5px;
-  }
-  
-  .focused:after {
+}
+
+.focused:after {
     content: "\2212";
-  }
-  
-  .panel {
+}
+
+.panel {
+    
+    width: 100%;
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
-  .info-accordion{
+    display: flex;
+    justify-content: center;
+}
+
+.inner-panel {
+    font-size: 18px;
+    width: 80%;
+}
+
+.info-accordion {
     text-align: center;
-  }
+
+}
+
+.mindfulness-header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
 /* .socials-footer{
     float: right;
     font-size: 20px;
