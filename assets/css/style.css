@@ -416,13 +416,13 @@ a {
     .stressRelief_div {
         display: grid;
         grid-template-columns: 120px 120px 120px 120px 120px;
-        grid-template-rows: 120px 120px;
+        grid-template-rows: 120px 120px ;
         grid-auto-columns: 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            ". . . . ."
-            ". . . . .";
+            ". . . . .  "
+            ". . . . .  ";
     }
 
     .relief-img {
@@ -469,6 +469,7 @@ a {
 }
 
 
+
 @media screen and (max-width: 800px) {
     .outer-circle {
         display: flex;
@@ -504,11 +505,12 @@ a {
     }
 
     .techniques-box {
-        width: 100%;
+        width: 50%;
     }
 
     .techniques-container {
         display: block;
+        text-align: center;
     }
 
     .techniques-section {
@@ -531,6 +533,46 @@ a {
 
     }
 
+}
+@media screen and (max-width: 650px) {
+    .stressRelief_div {
+       display: grid;
+       grid-template-columns: 120px 120px;
+       grid-template-rows: 120px 120px 120px 120px;
+       grid-auto-columns: 1fr;
+       gap: 0px 0px;
+       grid-auto-flow: row;
+       grid-template-areas:
+           ". .  "
+           ". .  "
+           ". .  ";
+   }
+}
+
+@media screen and (max-width: 550px) {
+     .stressRelief_div {
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 120px 120px 120px 120px;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". .  "
+            ". .  "
+            ". .  ";
+    }
+    .techniques-section{
+        margin-top: 700px;
+    }
+    .techniques-box {
+        width: 100%;
+    }
+
+    .techniques-container {
+        display: block;
+        text-align: center;
+    }
 }
 
 #carousel-section {
@@ -596,7 +638,7 @@ a {
 }
 
 footer {
-    height: 150px;
+    
     background-color: #8fcdff;
     width: 100%;
     display: flex;
