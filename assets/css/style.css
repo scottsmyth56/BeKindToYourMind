@@ -515,6 +515,7 @@ a {
         width: 100%;
     }
 
+
 }
 
 @media screen and (max-width: 620px) {
@@ -534,6 +535,8 @@ a {
             ". .  "
             ". .  ";
     }
+
+
 }
 
 @media screen and (max-width: 550px) {
@@ -684,6 +687,9 @@ footer {
     justify-content: center;
 } */
 
+
+
+
 /* MindFulness.html page styling */
 
 .accordion {
@@ -787,11 +793,17 @@ footer {
     border: 2px solid #8fcdff;
 }
 
+.technique-div-header {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
 
 .improve-techniques-div {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100% 100%;
+    grid-template-rows: 50% 50%;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -801,39 +813,41 @@ footer {
 
 .Exercise {
     grid-area: Exercise;
-    border-right: 2px solid #3a3a3a;
-    border-bottom: 2px solid #3a3a3a;
-    padding:20px;
+    border-right: 2px solid #8fcdff;
+    border-bottom: 2px solid  #8fcdff;
+    padding: 20px;
     line-height: 25px;
 }
 
 .Diet {
     grid-area: Diet;
-    border-left: 2px solid #3a3a3a;
-    border-bottom: 2px solid #3a3a3a;
-    padding:20px;
+    border-left: 2px solid #8fcdff;
+    border-bottom: 2px solid #8fcdff;
+    padding: 20px;
     line-height: 25px;
 }
 
 .Connect {
     grid-area: Connect;
-    border-right: 2px solid #3a3a3a;
-    border-top: 2px solid #3a3a3a;
-    padding:20px;
+    border-right: 2px solid #8fcdff;
+    border-top: 2px solid #8fcdff;
+    padding: 20px;
     line-height: 20px;
 }
 
 .Sleep {
     grid-area: Sleep;
-    border-left: 2px solid #3a3a3a;
-    border-top: 2px solid #3a3a3a;
-    padding:20px;
+    border-left: 2px solid #8fcdff;
+    border-top: 2px solid #8fcdff;
+    padding: 20px;
 }
-.technique-header{
+
+.technique-header {
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
+
 .technique-header::before {
     content: '';
     display: block;
@@ -843,13 +857,48 @@ footer {
     left: 25%;
     border-top: 1px solid #3a3a3a;
 }
-.diet-technique-list{
+
+.diet-technique-list {
     padding: 20px;
 
 }
-.connect-technique-list{
+
+.connect-technique-list {
     padding: 20px;
 }
-.sleep-technique-list{
+
+.sleep-technique-list {
     padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .Exercise {
+        border: 1px solid #8fcdff;
+    }
+
+    .Diet {
+        border: 1px solid #8fcdff;
+
+    }
+
+    .Connect {
+        border: 1px solid #8fcdff;
+
+    }
+
+    .Sleep {
+        border: 1px solid #8fcdff;
+    }
+
+    .improve-techniques-div {
+
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Exercise"
+            "Diet"
+            "Connect"
+            "Sleep";
+    }
 }
