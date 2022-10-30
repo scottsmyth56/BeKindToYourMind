@@ -831,10 +831,12 @@ footer {
     line-height: 25px;
     background-color: #3a3a3a;
     color: white;
-    background: url('../images/exercise-big.jpg');
+    background: url('../images/exercise-big.webp');
     background-size: 100% 100%;
     transition: all 1s;
     font-size: 17px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 
 }
 .Exercise:hover{
@@ -853,10 +855,12 @@ footer {
     line-height: 25px;
     background-color: #3a3a3a;
     color: white;
-    background: url('../images/diet-square.jpg');
+    background: url('../images/diet-big.webp');
     background-size: 100% 100%;
     transition: all 1s;
     font-size: 17px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 
 }
 .Diet:hover{
@@ -872,10 +876,12 @@ footer {
     line-height: 20px;
     background-color: #3a3a3a;
     color: white;
-    background: url('../images/connect-big.jpg');
+    background: url('../images/connect-big.webp');
     background-size: 100% 100%;
     transition: all 1s;
     font-size: 17px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 }
 .Connect:hover{
     transform: scale(1.1);
@@ -889,10 +895,12 @@ footer {
     padding: 20px;
     background-color: #3a3a3a;
     color: white;
-    background: url('../images/sleep-big.jpg');
+    background: url('../images/sleep-big.webp');
     background-size: 100% 100%;
     transition: all 1s;
     font-size: 17px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 }
 .Sleep:hover{
     transform: scale(1.1);
