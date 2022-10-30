@@ -811,6 +811,8 @@ footer {
 }
 
 .Exercise {
+    display: flex;
+    justify-content: center;
     grid-area: Exercise;
     border-right: 2px solid #8fcdff;
     border-bottom: 2px solid #8fcdff;
@@ -836,6 +838,8 @@ footer {
 
 
 .Diet {
+    display: flex;
+    justify-content: center;
     grid-area: Diet;
     border-left: 2px solid #8fcdff;
     border-bottom: 2px solid #8fcdff;
@@ -858,11 +862,13 @@ footer {
 
 
 .Connect {
+    display: flex;
+    justify-content: center;
     grid-area: Connect;
     border-right: 2px solid #8fcdff;
     border-top: 2px solid #8fcdff;
     padding: 20px;
-    line-height: 20px;
+    line-height: 25px;
     background-color: #3a3a3a;
     color: white;
     background: url('../images/connect-big.webp');
@@ -879,6 +885,9 @@ footer {
 
 
 .Sleep {
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
     grid-area: Sleep;
     border-left: 2px solid #8fcdff;
     border-top: 2px solid #8fcdff;
@@ -920,7 +929,7 @@ footer {
     padding: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .Exercise {
         border: 1px solid #8fcdff;
     }
@@ -1016,7 +1025,50 @@ input[type=submit]:hover {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
-.support-form label{
+
+.support-form label {
     color: white;
     font-size: 20px;
+}
+
+@media screen and (max-width: 450px) {
+
+    .support-form {
+        width: 70%;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "line1 line2 line3"
+        "line4 line5 line6";
+}
+
+.line1 {
+    grid-area: line1;
+}
+
+.line2 {
+    grid-area: line2;
+}
+
+.line3 {
+    grid-area: line3;
+}
+
+.line4 {
+    grid-area: line4;
+}
+
+.line5 {
+    grid-area: line5;
+}
+
+.line6 {
+    grid-area: line6;
 }

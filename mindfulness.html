@@ -52,8 +52,8 @@
 
 
 
-            <button class="accordion" aria-label="Find out how mindfulness works"><strong> How does Mindfulness Work?</strong> <i
-                    class="fa-solid fa-person-praying" > </i> </button>
+            <button class="accordion" aria-label="Find out how mindfulness works"><strong> How does Mindfulness
+                    Work?</strong> <i class="fa-solid fa-person-praying"> </i> </button>
 
             <div class="panel">
                 <div class="inner-panel">
@@ -66,8 +66,8 @@
                 </div>
             </div>
 
-            <button class="accordion" aria-label="Find out how to learn mindfulness"><strong> How can I Learn Mindfulness?</strong> <i
-                    class="fa-brands fa-leanpub"></i></button>
+            <button class="accordion" aria-label="Find out how to learn mindfulness"><strong> How can I Learn
+                    Mindfulness?</strong> <i class="fa-brands fa-leanpub"></i></button>
             <div class="panel">
                 <div class="inner-panel">
                     <p>MBCT and MBSR are ‘programmes’ that have been developed particularly in health and mental health
@@ -79,8 +79,8 @@
                         mindfulness..</p>
                 </div>
             </div>
-            <button class="accordion" aria-label="Find out what mental health is "><strong>what is Mental Health?</strong> <i
-                    class="fa-solid fa-hand-holding-heart"></i></button>
+            <button class="accordion" aria-label="Find out what mental health is "><strong>what is Mental
+                    Health?</strong> <i class="fa-solid fa-hand-holding-heart"></i></button>
             <div class="panel">
                 <div class="inner-panel">
                     <p>Mental health includes our emotional, psychological, and social well-being. It affects how we
@@ -95,8 +95,9 @@
                 </div>
             </div>
 
-            <button class="accordion" aria-label="Find out why mental health is important for overall health"><strong>Why is mental health important for overall health?</strong> <i
-                    class="fa-solid fa-heart-pulse"></i></button>
+            <button class="accordion"
+                aria-label="Find out why mental health is important for overall health"><strong>Why is mental health
+                    important for overall health?</strong> <i class="fa-solid fa-heart-pulse"></i></button>
             <div class="panel">
                 <div class="inner-panel">
                     <p>Mental and physical health are equally important components of overall health. For example,
@@ -105,8 +106,8 @@
                         chronic conditions can increase the risk for mental illness</p>
                 </div>
             </div>
-            <button class="accordion" aria-label="Find out if your mental health can change over time"><strong> Can your mental health change over time?</strong><i
-                    class="fa-solid fa-hourglass-start"></i></button>
+            <button class="accordion" aria-label="Find out if your mental health can change over time"><strong> Can your
+                    mental health change over time?</strong><i class="fa-solid fa-hourglass-start"></i></button>
             <div class="panel">
                 <div class="inner-panel">
                     <p>Yes, it’s important to remember that a person’s mental health can change over time, depending on
@@ -258,7 +259,6 @@
                             <li>Better mental health – it can lighten your mood and make you feel happier</li>
                             <li>Lower your risk of dementia – social interaction is good for your brain health</li>
                             <li>Promotes a sense of safety, belonging and security</li>
-                            <li>Allows you to confide in others and let them confide in you</li>
 
 
                         </ul>
@@ -271,8 +271,7 @@
                     <div class="overlay-div">
                         <h3 class="technique-header">Sleep <i class="fa-solid fa-bed"></i></h3>
 
-                        <h3> Why is sleep important for our mental health?</h3>
-                        <br>
+
                         <p>Sleep has an important restorative function in ‘recharging’ the brain at the end of each day,
                             just
                             like we need to charge a mobile phone battery after prolonged use. Maintaining a regular
@@ -307,43 +306,43 @@
             </div>
         </div>
     </body>
-        <footer>
+    <footer>
 
 
 
-            <div class="logo-div">
-                <div class="outer-circle">
+        <div class="logo-div">
+            <div class="outer-circle">
 
-                    <div class="circle">
-                        <a href="index.html" aria-label="Go to Homepage"><img src="assets/images/logo.png" class="logo"
-                                alt="Be Kind To Your Mind logo"></a>
-                    </div>
-                </div>
-
-                <div class="logo-text-div">
-                    <h1 class="logo-text"> Be Kind To Your Mind</h1>
+                <div class="circle">
+                    <a href="index.html" aria-label="Go to Homepage"><img src="assets/images/logo.png" class="logo"
+                            alt="Be Kind To Your Mind logo"></a>
                 </div>
             </div>
 
-    
-        </footer>
-  
-    </html>
+            <div class="logo-text-div">
+                <h1 class="logo-text"> Be Kind To Your Mind</h1>
+            </div>
+        </div>
 
 
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+    </footer>
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("focused");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
+</html>
+
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("focused");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
