@@ -672,21 +672,6 @@ footer {
     display: inline-flex;
 }
 
-/* .socials-footer{
-    float: right;
-    font-size: 20px;
-    color: white;
-}
-.social-div{
-    width: 99%;
-    text-align: center;
-}
-.outer-social{
-    width: 49%;
-    display:inline-flex ;
-    justify-content: center;
-} */
-
 
 
 
@@ -960,3 +945,45 @@ footer {
             "Sleep";
     }
 }
+
+/* Support.html Styling */
+
+.support-form-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.support-form{
+    border: 2px solid #8fcdff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+input[type=text], 
+select, 
+input[type=email],
+input[type=date],
+input[type=time] {
+
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
