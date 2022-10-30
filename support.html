@@ -37,7 +37,7 @@
 
             <div class="nav">
                 <a href="./index.html" aria-label="Go to Homepage">Home</a>
-                <a href="./mindfulness.html" aria-label="Go Mindfulness page ">Mindfullness</a>
+                <a href="./mindfulness.html" aria-label="Go Mindfulness page ">Mindfulness</a>
                 <a href="./support.html" aria-label="Go to Support page" class="active">Support</a>
 
 
@@ -48,27 +48,27 @@
     <div class="support-form-div">
 
 
-        <form action="form-action.html" class="support-form">
+        <form action="./form-confirm.html" class="support-form">
 
-            <label for="fname">First Name:</label><br>
-            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" class="no-outline" required>
 
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" class="no-outline" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="no-outline" required>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <label for="date">Book a Date:</label>
+            <input type="date" id="date" name="date" class="no-outline" required>
 
-            <label for="date">Book a Date:</label><br>
-            <input type="date" id="date" name="date" required><br><br>
-
-            <label for="time">Book a Time:</label><br>
-            <input type="time" id="time" name="time" required><br><br>
+            <label for="time">Book a Time:</label>
+            <input type="time" id="time" name="time" class="no-outline" required>
 
 
             <label for="category">What would you like to talk about?</label>
-            <select id="category" name="category">
-                <option value="mindfulness" name="mindfulness">Mindfulness</option>
+            <select id="category" name="category" class="no-outline">
+                <option value="mindfulness">Mindfulness</option>
                 <option value="mental-health">Mental Health</option>
                 <option value="anxiety">Anxiety Problems</option>
                 <option value="self-care">Self Care Techniques </option>
@@ -87,26 +87,26 @@
         </div>
         <div class="techniques-container">
 
-            <div class="techniques-box" id="aware-card" title="A Woman performing stretches">
+            <div class="techniques-box" id="aware-card" title="aware.ie information card">
 
                 <div class="info">
                     <div class="card-text">
                         <h2>Aware</h2>
                         <p>Depression & Bipolar Disorder Support </p>
-                        <a href="www.aware.ie" class="helpline-link">www.aware.ie</a>
+                        <a href="www.aware.ie" target="_blank" class="helpline-link">www.aware.ie</a>
                         <p><strong>Phone:</strong> 1800 80 48 48</p>
 
                     </div>
                 </div>
 
             </div>
-            <div class="techniques-box" id="spun-out-card" title="two women talking on a bench">
+            <div class="techniques-box" id="spun-out-card" title="spun out.ie information card">
 
                 <div class="info">
                     <div class="card-text">
                         <h2>Spun Out</h2>
                         <p>Wellbeing Support for young people </p>
-                        <a href="https://spunout.ie/" class="helpline-link">https://spunout.ie/</a>
+                        <a href="https://spunout.ie/" target="_blank" class="helpline-link">https://spunout.ie/</a>
                         <p><strong>Phone:</strong> 01 675 3554</p>
 
                     </div>
@@ -115,28 +115,26 @@
 
 
             </div>
-            <div class="techniques-box" id="turn2me-card"
-                title="a plate of healthy food contained eggs avocados and bread">
+            <div class="techniques-box" id="turn2me-card" title="turn2me information card">
                 <div class="info">
                     <div class="card-text">
                         <h2>Turn2Me</h2>
                         <p>turn2me is a high-quality, safe, anonymous, and confidential space for you to gain support
                             for your mental health online</p>
-                        <a href="https://turn2me.ie/" class="helpline-link">https://turn2me.ie</a>
+                        <a href="https://turn2me.ie/" target="_blank" class="helpline-link">https://turn2me.ie</a>
 
                     </div>
                 </div>
 
 
             </div>
-            <div class="techniques-box" id="mhc-card" title="A man sleeping in bed">
+            <div class="techniques-box" id="mhc-card" title="Mental Health Commission information card">
                 <div class="info">
                     <div class="card-text">
                         <h2>Aware</h2>
-                        <p>regulating in-patient mental health services; protecting the interests of people who are
-                            involuntarily admitted; and setting standards for high quality and good practices across
-                            mental health services.</p>
-                        <a href="https://www.mhcirl.ie/" class="helpline-link">https://www.mhcirl.ie/</a>
+                        <p>Regulating in-patient mental health services.</p>
+                        <a href="https://www.mhcirl.ie/" target="_blank"
+                            class="helpline-link">https://www.mhcirl.ie/</a>
                         <p><strong>Phone:</strong>01 636 2400</p>
                     </div>
                 </div>
@@ -144,30 +142,9 @@
             </div>
         </div>
     </section>
-    <!-- <div class="helplines-div">
-
-
-        <div class="aware">
-            <h2>Aware</h3>
-
-                <p><strong>Email:</strong><a href="http://www.aware.ie/?external=1">Aware.ie</a> </p>
-                <p><strong>Phone:</strong> </p>
-
-        </div>
-        <div class="childine"></div>
-        <div class="pieta-house"></div>
-        <div class="grow"></div>
-        <div class="lgbt"></div>
-        <div class="parentline"></div>
-    </div> -->
 
 
 
-
-
-
-
-    </div>
 
 
     <footer>
@@ -176,7 +153,7 @@
             <div class="outer-circle">
 
                 <div class="circle">
-                    <a href="index.html" aria-label="Go to Homepage"><img src="assets/images/logo.png" class="logo"
+                    <a href="./index.html" aria-label="Go to Homepage"><img src="assets/images/logo.png" class="logo"
                             alt="Be Kind To Your Mind logo"></a>
                 </div>
             </div>
