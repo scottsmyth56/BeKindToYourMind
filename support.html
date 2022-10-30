@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/394cced9ae.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
     <title>Be Kind To Your Mind</title>
 </head>
@@ -80,31 +81,7 @@
     document.getElementById("date").innerHTML = current_date;
 </script>
 
-<script>
-    let slideIndex = [1, 1];
-    let slideId = ["mySlides1", "mySlides2"]
-    showSlides(1, 0);
-    showSlides(1, 1);
 
-    function plusSlides(n, no) {
-        showSlides(slideIndex[no] += n, no);
-    }
-
-    function showSlides(n, no) {
-        let i;
-        let x = document.getElementsByClassName(slideId[no]);
-        if (n > x.length) {
-            slideIndex[no] = 1
-        }
-        if (n < 1) {
-            slideIndex[no] = x.length
-        }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex[no] - 1].style.display = "block";
-    }
-</script>
 
 
 
