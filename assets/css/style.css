@@ -114,7 +114,7 @@ a {
 }
 
 #quoteBlock {
-    background: url('../images/quote-background.jpg') no-repeat center center;
+    background: url('../images/hero-image.webp') no-repeat center center;
     background-size: 100% 100%;
     width: 100%;
     height: 250px;
@@ -296,23 +296,23 @@ a {
 }
 
 #exercise-card {
-    background: url('../images/Exercise.jpg');
+    background: url('../images/exercise-technique.webp');
     background-size: 100% 100%;
 
 }
 
 #connect-card {
-    background: url('../images/connect.jpg');
+    background: url('../images/connect-technique.webp');
     background-size: 100% 100%;
 }
 
 #diet-card {
-    background: url('../images/diet.jpg');
+    background: url('../images/diet-technique.webp');
     background-size: 100% 100%;
 }
 
 #sleep-card {
-    background: url('../images/sleep.jpg');
+    background: url('../images/sleep-technique.webp');
     background-size: 100% 100%;
 }
 
@@ -929,7 +929,7 @@ footer {
     padding: 20px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 950px) {
     .Exercise {
         border: 1px solid #8fcdff;
     }
@@ -1039,6 +1039,8 @@ input[type=submit]:hover {
     .support-form {
         width: 70%;
     }
+
+   
 }
 
 
@@ -1082,14 +1084,14 @@ input[type=submit]:hover {
     background-size: 100% 100%;
 }
 
-.card-text a {
+.support-card-text a {
     text-decoration: underline;
     color: white;
     font-size: 25px;
 
 }
 
-.card-text {
+.support-card-text {
     font-size: 25px;
 }
 
