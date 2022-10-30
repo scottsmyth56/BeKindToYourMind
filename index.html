@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mindfullness and Mental Well Being Website">
     <meta name="keywords" content="Mindfullness, mental health, stress, positivity">
-    
-    
+
+
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/394cced9ae.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
@@ -49,9 +49,9 @@
         <div id="quoteBlock">
             <div class="quote-content-div">
                 <h2 class="quoteheader">Daily Quote for </h2>
-                <h2 id="date" class="quoteheader"> </h2>
+                <h2 id="date" class="quoteheader"> .</h2>
 
-                <h1 id="quote-text"> “There is hope, even when your brain tells you there isn’t.” ― John Green</h1>
+                <h2 id="quote-text"> “There is hope, even when your brain tells you there isn’t.” ― John Green</h2>
             </div>
         </div>
     </section>
@@ -99,12 +99,11 @@
         </div>
         <div class="techniques-container">
 
-            <div class="techniques-box" id="exercise-card" title="A Woman performing stretches"
-                aria-label="A Woman performing stretches">
+            <div class="techniques-box" id="exercise-card" title="A Woman performing stretches">
 
                 <div class="info">
                     <div class="card-text">
-                        <h1>Exercise</h1>
+                        <h2>Exercise</h2>
                         <p> Being active is not only great for your physical health and fitness.Evidence also shows it
                             can also improve your mental wellbeing</p>
                         <button class="technique-btn" aria-label="Read More about Exercise and Mental Health">Read
@@ -113,12 +112,11 @@
                 </div>
 
             </div>
-            <div class="techniques-box" id="connect-card" title="two women talking on a bench"
-                aria-label="two women talking on a bench">
+            <div class="techniques-box" id="connect-card" title="two women talking on a bench">
 
                 <div class="info">
                     <div class="card-text">
-                        <h1>Connect with People</h1>
+                        <h2>Connect with People</h2>
                         <p> Phone calls and social networks have their place, but few things can beat the
                             stress-busting,
                             mood-boosting power of quality face-to-face time with other people,
@@ -132,11 +130,10 @@
 
 
             </div>
-            <div class="techniques-box" id="diet-card" title="a plate of healthy food contained eggs avocados and bread"
-                aria-label="a plate of healthy food contained eggs avocados and bread">
+            <div class="techniques-box" id="diet-card" title="a plate of healthy food contained eggs avocados and bread">
                 <div class="info">
                     <div class="card-text">
-                        <h1>Healthy Diet</h1>
+                        <h2>Healthy Diet</h2>
                         <p> Foods that can support your mood include fatty fish rich in omega-3s,
                             nuts (walnuts, almonds, cashews and peanuts), avocados, beans, leafy greens (spinach, kale
                             and Brussels sprouts),
@@ -148,11 +145,10 @@
 
 
             </div>
-            <div class="techniques-box" id="sleep-card" title="A man sleeping in bed"
-                aria-label="A man sleeping in bed">
+            <div class="techniques-box" id="sleep-card" title="A man sleeping in bed">
                 <div class="info">
                     <div class="card-text">
-                        <h1>Don't Skimp on Sleep</h1>
+                        <h2>Don't Skimp on Sleep</h2>
                         <p>It matters more than you think. Sleep is our body and mind's best way to recharge and
                             rejuvenate.
                             One way to get sleep better is to take a break from the stimulation of screens — TV, phones,
@@ -317,68 +313,59 @@
 
 
 
+
+    <footer>
+
+        <div class="logo-div">
+            <div class="outer-circle">
+
+                <div class="circle">
+                    <a href="index.html" aria-label="Go to Homepage"><img src="assets/images/logo.png" class="logo"
+                            alt="Be Kind To Your Mind logo"></a>
+                </div>
+            </div>
+
+            <div class="logo-text-div">
+                <h1 class="logo-text"> Be Kind To Your Mind</h1>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script>
+        var date = new Date();
+        var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+        document.getElementById("date").innerHTML = current_date;
+    </script>
+
+    <script>
+        let slideIndex = [1, 1];
+        let slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {
+                slideIndex[no] = 1
+            }
+            if (n < 1) {
+                slideIndex[no] = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+
 </body>
-<footer>
-
-    <div class="logo-div">
-        <div class="outer-circle">
-
-            <div class="circle">
-                <a href="index.html" aria-label="Go to Homepage"><img src="assets/images/logo.png" class="logo"
-                        alt="Be Kind To Your Mind logo"></a>
-            </div>
-        </div>
-
-        <div class="logo-text-div">
-            <h1 class="logo-text"> Be Kind To Your Mind</h1>
-        </div>
-
-        <!-- <div class="outer-social">
-
-            <div class="social-div">
-                <p class="socials-footer"><i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-facebook"></i> <i
-                        class="fa-brands fa-instagram"></i> <i class="fa-brands fa-linkedin"></i></p>
-            </div>
-
-        </div>
-    </div> -->
-</footer>
-
 
 </html>
-<script>
-    var date = new Date();
-    var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
-    document.getElementById("date").innerHTML = current_date;
-</script>
-
-<script>
-    let slideIndex = [1, 1];
-    let slideId = ["mySlides1", "mySlides2"]
-    showSlides(1, 0);
-    showSlides(1, 1);
-
-    function plusSlides(n, no) {
-        showSlides(slideIndex[no] += n, no);
-    }
-
-    function showSlides(n, no) {
-        let i;
-        let x = document.getElementsByClassName(slideId[no]);
-        if (n > x.length) {
-            slideIndex[no] = 1
-        }
-        if (n < 1) {
-            slideIndex[no] = x.length
-        }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex[no] - 1].style.display = "block";
-    }
-</script>
-
-
-
-
-<!-- <script src="https://kit.fontawesome.com/394cced9ae.js" crossorigin="anonymous"></script> -->

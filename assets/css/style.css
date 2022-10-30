@@ -285,7 +285,7 @@ a {
     padding: 8px
 }
 
-.card-text h1 {
+.card-text h2 {
     color: #8fcdff;
 }
 
@@ -914,15 +914,7 @@ footer {
     color: #8fcdff;
 }
 
-.technique-header::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 50%;
-    left: 25%;
-    border-top: 1px solid #3a3a3a;
-}
+
 
 .diet-technique-list {
     padding: 20px;
