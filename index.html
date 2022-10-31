@@ -21,6 +21,7 @@
 <body>
     <header>
 
+        <!-- Logo and Title  -->
         <div class="logo-div">
             <div class="outer-circle">
 
@@ -34,7 +35,7 @@
                 <h1 class="logo-text"> Be Kind To Your Mind</h1>
             </div>
 
-
+            <!-- Navigation  -->
             <div class="nav">
                 <a href="./index.html" aria-label="Go to Homepage" class="active">Home</a>
                 <a href="./mindfulness.html" aria-label="Go Mindfulness page ">Mindfulness</a>
@@ -45,6 +46,7 @@
         </div>
     </header>
 
+    <!-- Daily Quote  -->
     <section class="quote-section">
         <div id="quoteBlock">
             <div class="quote-content-div">
@@ -54,6 +56,8 @@
                 <h2 id="quote-text"> “There is hope, even when your brain tells you there isn’t.” ― John Green</h2>
             </div>
         </div>
+
+        <!-- About Mindfullness -->
     </section>
     <section class="paragraph-section">
         <div class="outer-para-div">
@@ -93,6 +97,8 @@
         </div>
 
     </section>
+
+    <!-- Techniques to improve mental health section  -->
 
     <section class="techniques-section">
         <div class="technique-header-div">
@@ -169,6 +175,8 @@
         </div>
     </section>
 
+    <!-- 5 Second Stress Relief Section  -->
+
     <section id="stressRelief">
         <h2 class="section-header"> 5 Second Stress Relievers</h2>
 
@@ -178,7 +186,8 @@
 
                 <div class="relief">
                     <br>
-                    <img src="/assets/images/speak-icon.webp" class="relief-img" alt="A character performing a speak action">
+                    <img src="/assets/images/speak-icon.webp" class="relief-img"
+                        alt="A character performing a speak action">
                     <p> Speak it out</p>
                 </div>
                 <div class="relief">
@@ -189,7 +198,8 @@
                 </div>
                 <div class="relief">
                     <br>
-                    <img src="/assets/images/write-icon.webp" class="relief-img" alt="A hand performing a writing action">
+                    <img src="/assets/images/write-icon.webp" class="relief-img"
+                        alt="A hand performing a writing action">
                     <p>Write it Down</p>
 
                 </div>
@@ -223,12 +233,14 @@
                 </div>
                 <div class="relief">
                     <br>
-                    <img src="/assets/images/fruit-icon.webp" class="relief-img" alt="An icon displaying a piece of fruit">
+                    <img src="/assets/images/fruit-icon.webp" class="relief-img"
+                        alt="An icon displaying a piece of fruit">
                     <p>Eat Fresh Fruit</p>
                 </div>
                 <div class="relief">
                     <br>
-                    <img src="/assets/images/dance-icon.webp" class="relief-img" alt="A character performing a dance action ">
+                    <img src="/assets/images/dance-icon.webp" class="relief-img"
+                        alt="A character performing a dance action ">
                     <p>Bust a Move</p>
                 </div>
             </div>
@@ -236,6 +248,8 @@
         </div>
 
     </section>
+
+    <!-- Top Rated Mental Health Apps and Podcast -->
 
     <section id="carousel-section">
 
@@ -254,19 +268,22 @@
 
                 <div class="mySlides1">
                     <a href="http://www.sleepwithmepodcast.com/" target="_blank"
-                        aria-label="Visit sleep with me podcast web page"><img src="assets/images/sleepwithme-pod-banner.webp"
-                            style="width:100%" alt="sleep with me podcast logo"></a>
+                        aria-label="Visit sleep with me podcast web page"><img
+                            src="assets/images/sleepwithme-pod-banner.webp" style="width:100%"
+                            alt="sleep with me podcast logo"></a>
                 </div>
 
                 <div class="mySlides1">
                     <a href="https://psychcentral.com/blog/show" target="_blank"
                         aria-label="Visit the pysch central podcast web page"><img
-                            src="assets/images/insidementalhealth-pod-banner.webp" style="width:100%" alt="pysch central logo"></a>
+                            src="assets/images/insidementalhealth-pod-banner.webp" style="width:100%"
+                            alt="pysch central logo"></a>
                 </div>
 
                 <div class="mySlides1">
                     <a href="https://hiddenbrain.org/" target="_blank" aria-label="Visit hidden brain podcast web page">
-                        <img src="assets/images/hiddenbrain-pod-banner.webp" style="width:100%" alt="hidden brain logo"></a>
+                        <img src="assets/images/hiddenbrain-pod-banner.webp" style="width:100%"
+                            alt="hidden brain logo"></a>
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -284,14 +301,16 @@
 
                 <div class="mySlides2">
                     <a href="https://www.headspace.com/" target="_blank" aria-label="Visit headspace app web page"><img
-                            src="assets/images/headspace-app-banner.webp" style="width:100%" alt="Headspace App logo"></a>
+                            src="assets/images/headspace-app-banner.webp" style="width:100%"
+                            alt="Headspace App logo"></a>
                 </div>
 
                 <div class="mySlides2">
 
                     <a href="https://hminnovations.org/meditation-app" target="_blank"
-                        aria-label="Visit healthy minds app web page"><img src="assets/images/healthyminds-app-banner.webp"
-                            style="width:100%" alt="healthyminds app logo"></a>
+                        aria-label="Visit healthy minds app web page"><img
+                            src="assets/images/healthyminds-app-banner.webp" style="width:100%"
+                            alt="healthyminds app logo"></a>
                 </div>
 
                 <div class="mySlides2">
@@ -310,15 +329,10 @@
 
             </div>
 
-
         </div>
     </section>
 
-
-
-
-
-
+    <!-- Footer Display site logo -->
 
     <footer>
 
@@ -339,13 +353,14 @@
     </footer>
 
 
-
+    <!-- Script to get current date for daily quote section -->
     <script>
         var date = new Date();
         var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
         document.getElementById("date").innerHTML = current_date;
     </script>
 
+    <!-- Script for carousel, Credit to W3Schools -->
     <script>
         let slideIndex = [1, 1];
         let slideId = ["mySlides1", "mySlides2"]

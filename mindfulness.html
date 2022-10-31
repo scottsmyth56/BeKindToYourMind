@@ -20,9 +20,9 @@
 <body>
     <header>
 
+        <!-- Logo and Title  -->
         <div class="logo-div">
             <div class="outer-circle">
-
                 <div class="circle">
                     <a href="./index.html" aria-label="Return to Homepage"><img src="assets/images/logo.webp"
                             class="logo" alt="Be Kind To Your Mind Logo"></a>
@@ -33,24 +33,22 @@
                 <h1 class="logo-text"> Be Kind To Your Mind</h1>
             </div>
 
-
+            <!-- Navigation -->
             <div class="nav">
                 <a href="./index.html" aria-label="Go to Homepage">Home</a>
                 <a href="./mindfulness.html" aria-label="Go Mindfulness page " class="active">Mindfulness</a>
                 <a href="./support.html" aria-label="Go to Support page">Support</a>
-
-
             </div>
         </div>
     </header>
 
     <body>
 
+        <!-- Accordion displaying information on mental health and mindfulness -->
+
         <div class="info-accordion">
 
             <h1 class="mindfulness-header">Mindfulness and Mental Health <i class="fa-solid fa-brain"></i></h1>
-
-
 
             <button class="accordion" aria-label="Find out how mindfulness works"><strong> How does Mindfulness
                     Work?</strong> <i class="fa-solid fa-person-praying"> </i> </button>
@@ -118,7 +116,7 @@
             </div>
 
         </div>
-
+        <!-- Video Information, Videos embed as iframes from youtube -->
         <h2 id="video-header">More Information on Mental Health and Mindfulness</h2>
 
         <div class="more-info-videos">
@@ -147,14 +145,18 @@
             </div>
         </div>
 
+        <!-- Extended Information on Techniques to improve mental health -->
+
         <h2 class="technique-div-header">Techniques to Improve Mental Health</h2>
 
         <div class="outer-techniques-div">
+
             <div class="improve-techniques-div">
 
-
                 <div class="Exercise">
+
                     <div class="overlay-div">
+
                         <h3 class="technique-header">Exercise <i class="fa-solid fa-dumbbell"></i></h3>
                         <p>Exercise is not just about aerobic capacity and muscle size. Sure, exercise can improve your
                             physical
@@ -305,44 +307,42 @@
 
             </div>
         </div>
-    </body>
-    <footer>
 
+        <!-- Footer Displaying site logo -->
+        <footer>
+            <div class="logo-div">
+                <div class="outer-circle">
 
+                    <div class="circle">
+                        <a href="index.html" aria-label="Go to Homepage"><img src="assets/images/logo.webp" class="logo"
+                                alt="Be Kind To Your Mind logo"></a>
+                    </div>
+                </div>
 
-        <div class="logo-div">
-            <div class="outer-circle">
-
-                <div class="circle">
-                    <a href="index.html" aria-label="Go to Homepage"><img src="assets/images/logo.webp" class="logo"
-                            alt="Be Kind To Your Mind logo"></a>
+                <div class="logo-text-div">
+                    <h1 class="logo-text"> Be Kind To Your Mind</h1>
                 </div>
             </div>
+        </footer>
+        
+        <!-- Script for Accordion - Credit to W3Schools -->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
 
-            <div class="logo-text-div">
-                <h1 class="logo-text"> Be Kind To Your Mind</h1>
-            </div>
-        </div>
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("focused");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
 
-
-    </footer>
+    </body>
 
 </html>
-
-
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("focused");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
