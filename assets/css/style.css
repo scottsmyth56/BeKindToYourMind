@@ -783,6 +783,9 @@ footer {
         width: 500px;
         height:300px ;
     }
+    #quote-text{
+        font-size: 25px;
+    }
 }
 @media screen and (max-width: 550px) {
     .iframe{
