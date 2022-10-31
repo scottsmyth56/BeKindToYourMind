@@ -7,7 +7,7 @@ The Intent of the site is to provide users with a positive experience so they ca
 
 The Deployed site can be found [HERE](https://scottsmyth56.github.io/BeKindToYourMind/)
 
-## Tabel of Contents
+## Table of Contents
 + [UX](#ux "UX")
   + [Site Goal](#site-goal "Site Goal")
   + [Audience](#audience "Audience")
@@ -23,15 +23,19 @@ The Deployed site can be found [HERE](https://scottsmyth56.github.io/BeKindToYou
   + [Current Features](#current-features "Current Features")
   + [Future Features](#future-features "Future Features")
 + [Testing](#testing "Testing")
-  + [Validator Testing](#validator-testing "Validator Testing")
+  + [Form Data](#form-data "Form Data")
+  + [Lighthouse](#lighthouse "Lighthouse")
+  + [HTML Validation](#html-validation "HTML Validation")
+  + [CSS Validation](#css-validation "CSS Validation")
   + [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
 + [Technologies Used](#technologies-used "Technologies Used")
-  + [Main Languages Used](#main-languages-used "Main Languages Used")
-  + [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-used "Frameworks, Libraries & Programs Used")
+  + [Languages Used](#languages-used "Languages Used")
+  + [External Programs and Libraries Used](#external-programs-and-libraries-used "External Programs and Libraries Used")
 + [Deployment](#deployment "Deployment")
-+ [Credits](#credits "Credits")
++ [Credit](#credit "Credit")
   + [Content](#content "Content")
   + [Media](#media "Media")
+  + [Code](#code "Code")
 
 ## UX
 ### Site Goal:
@@ -160,7 +164,7 @@ This Window displays a confirmation message to let the user know their booking r
 
 ![Form Data](assets/images-readme/Form-data.png)
 
-### Lighthouse Testing and Fixes
+### Lighthouse
 
 ##### Link Reference
 - Links on the .next and .prev buttons on the carousel needed to reference something. As i was using these buttons to slide the carousel it didnt link anything.
@@ -182,7 +186,7 @@ href="javascript:void(0)";.
 
 ![Lighthouse Test](assets/images-readme/Lighthouse-test.png)
 
-### HTML Validation and Fixes
+### HTML Validation
 
 #### Button cannot be a decendant of Anchor tag
 
@@ -204,14 +208,77 @@ href="javascript:void(0)";.
  
 ![HTMl Validated](assets/images-readme/html-validated.png)
 
-### Jigsaw
+### CSS Validation
 
 CSS page passsed validation with no errors
 
 ![CSS Validated](assets/images-readme/css-validated.png)
 
+ ### Unfixed Bugs
+  ##### No Unfixed Bugs
 
 
+## Technologies Used
+
+
+### Languages Used
+- HTML5
+- CSS3
+- Javascript
+
+### External Programs and Libraries Used
+- Google Fonts - for the font family.
+- Font Awesome - to add icons to the social links in the footer element.
+- GitPod - to creat my html files & styling sheet before pushing the project to Github.
+- GitHub - to store my repository for submission.
+- Free-Convert - to convert png files to wepb.
+- Am I Responsive? - to ensure the project looked good across all devices.
+- Favicon - to provide the code & image for the icon in the tab bar.
+
+## Deployment
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+- In the GitHub repository, navigate to the Settings tab
+- From the source section drop-down menu, select the Master Branch
+- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The Deployed site can be found [HERE](https://scottsmyth56.github.io/BeKindToYourMind/)
+
+
+## Credit
+
+### Content
+- https://www.cdc.gov/mentalhealth/learn/index.htm
+- https://www.thehealthy.com/mental-health/stress/quick-stress-relief/
+- https://www.aware.ie/
+- https://www.helpguide.org/articles/stress/quick-stress-relief.html
+- https://www2.hse.ie/mental-health/self-help/activities/mindfulness/
+- https://www.helpguide.org/articles/healthy-living/the-mental-health-benefits-of-exercise.html
+- https://www.mentalhealth.org.uk/explore-mental-health/a-z-topics/diet-and-mental-health
+- https://www.mercycare.org/bhs/
+- https://www.mhcirl.ie/
+- https://turn2me.ie/
+- https://spunout.ie/
+
+### Media
+
+#### Images
+
+All Images used came from https://www.pexels.com/
+
+All Icons used came from:
+- https://icons8.com/
+- https://fontawesome.com/
+
+#### Videos
+
+https://youtu.be/3nwwKbM_vJc
+https://youtu.be/rkZl2gsLUp4
+
+### Code
+
+- Carousel Code Extracted from: https://www.w3schools.com/howto/howto_js_slideshow.asp
+- Accordion Code Extracted From: https://www.w3schools.com/howto/howto_js_accordion.asp
 
 
 
