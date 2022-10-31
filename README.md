@@ -140,14 +140,75 @@ This section displays tiles to some popular helplines and support platforms. Whe
 
 ![Helplines](assets/images-readme/Helpline-section.png)
 
+#### Booking Confirmation
+
+This Window displays a confirmation message to let the user know their booking request has been successful
+
+![Confirm-Booking](assets/images-readme/confirm-booking.png)
 
 ### Future Features
 
 - Live Support Chat.
 - Mindfulness Courses.
-- How to peopl around you with mental health issues.
+- How to help people around you with mental health issues.
 
 ## Testing
+
+### Form Data 
+
+- The form data to the action sends the values through the request succesfully, as this is a static site the values could not be displayed on the form confirmation page without the use of different frameworks.
+
+### Lighthouse Testing and Fixes
+
+##### Link Reference
+- Links on the .next and .prev buttons on the carousel needed to reference something. As i was using these buttons to slide the carousel it didnt link anything.
+###### Solution
+```
+href="javascript:void(0)";.
+```
+[Credit for Solution](https://stackoverflow.com/questions/1291942/what-does-javascriptvoid0-mean)
+
+##### Performance Issue loading png files
+
+- The sites performance was setback by using png image files.
+
+###### Solution
+
+- Convert all png files to webp files to increase performance
+
+### Lighthouse Test Results
+
+![Lighthouse Test](assets/images-readme/Lighthouse-test.png)
+
+### HTML Validation and Fixes
+
+#### Button cannot be a decendant of Anchor tag
+
+- Initally the buttons were implemented with an anchor tag surrounding. This threw up an error in the validator
+
+###### Solution
+
+- Remove the button and style the anchor tag as a button
+```
+ background-color: white;
+    color: #3a3a3a;
+    padding: 7px 7px;
+    transition: all 1s;
+    text-transform: uppercase;
+```
+### Validation Results
+ 
+ - All HTML pages passed validation with no errors.
+ 
+![HTMl Validated](assets/images-readme/html-validated.png)
+
+### Jigsaw
+
+CSS page passsed validation with no errors
+
+![CSS Validated](assets/images-readme/css-validated.png)
+
+
 
 
 
