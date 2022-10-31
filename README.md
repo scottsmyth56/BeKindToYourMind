@@ -60,4 +60,19 @@ The aim of the colour scheme was to provide a "soothing" and "calm" feeling to t
 The Lightblue colour choice was motivated through research and the pyschological impact colours have on a person with portraying feelings of calm and serenity.
 The Secondary colours were chosen for good contrast on the lightblue primary colour.
 
-![Colour Palette](/assets/images-readme/devices-layout.png)
+![Colour Palette](assets/images-readme/Colour-pallette.png)
+
+### Typography
+
+The main typography used throughout the site was Oswald.This a clean and professional looking font which allowed for users to put their trust into a site where they recieve vital information from.
+
+### Imagery & Icons
+
+Images displayed throughout the site have been sourced from free stock photo websites. The Icons also seen throughout the sight were obtained from Free icon platforms. The goal of the images used was to create a relatable scene for users whilst also improving the appeearance of the site.
+
+### Layout
+
+The layout is needed for the site to flow well and information be found and read easily. This was achieved by creating white space around the site's elements on each page. The layout was coded after designing wireframes to give an initial feel of how the site would flow.
+
+The Wireframes for the site layout can be accessed [HERE](https://scottsmyth56.github.io/BeKindToYourMind/)
+
