@@ -158,6 +158,8 @@ This Window displays a confirmation message to let the user know their booking r
 
 - The form data to the action sends the values through the request succesfully, as this is a static site the values could not be displayed on the form confirmation page without the use of different frameworks.
 
+![Form Data](assets/images-readme/Form-data.png)
+
 ### Lighthouse Testing and Fixes
 
 ##### Link Reference
