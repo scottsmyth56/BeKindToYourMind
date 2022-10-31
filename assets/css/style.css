@@ -760,12 +760,13 @@ footer {
 .left-video {
     width: 80%;
     overflow: hidden;
+    text-align: center;
 }
 
 .right-video {
     width: 80%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
+    overflow: hidden;
+    text-align: center;
 }
 
 #video-header {
@@ -777,6 +778,25 @@ footer {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border: 2px solid #8fcdff;
 }
+@media screen and (max-width: 700px) {
+    .iframe{
+        width: 500px;
+        height:300px ;
+    }
+}
+@media screen and (max-width: 550px) {
+    .iframe{
+        width: 350px;
+        height:250px ;
+    }
+    @media screen and (max-width: 440px) {
+        .iframe{
+            width: 250px;
+            height:150px ;
+        }
+    }
+}
+
 
 .technique-div-header {
     margin-top: 60px;
@@ -1140,4 +1160,32 @@ input[type=submit]:hover {
     letter-spacing: 4px;
     font-size: 18px;
     text-transform: uppercase;
+}
+
+.tech-btn {
+    background-color: white;
+    color: #3a3a3a;
+    padding: 7px 7px;
+    transition: all 1s;
+    text-transform: uppercase;
+}
+
+.tech-btn:hover {
+    background-color: #8fcdff;
+    color: white;
+    padding: 7px 7px;
+}
+
+.learn-btn {
+    background-color: #8fcdff;
+    color: white;
+    padding: 7px 7px;
+    transition: all 1s;
+    text-transform: uppercase;
+}
+
+.learn-btn:hover {
+    background-color: #3a3a3a;
+    color: white;
+    padding: 7px 7px;
 }
